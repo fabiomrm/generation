@@ -1,6 +1,10 @@
 <h1 align="center">GENERATION BOOTCAMP</h1>
 
 <p align="center">
+  <img src="https://github.com/fabiomrm/generation/blob/main/generation_21-10-2021-09-00-34-863_T.jpeg?raw=true" />
+</p>
+
+</p>
 	Repositório criado para armazenar minhas atividades durante o <a href="https://brazil.generation.org/">Bootcamp Generation Java Recifer</a>.
 </p>
 <h4 align="center"> 
