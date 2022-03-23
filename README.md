@@ -1,0 +1,31 @@
+<h1 align="center">GENERATION BOOTCAMP</h1>
+
+<p align="center">
+	Repositório criado para armazenar minhas atividades durante o <a href="https://brazil.generation.org/">Bootcamp Generation Java Recifer</a>.
+</p>
+<h4 align="center"> 
+	⌛...Em progresso...⌛
+</h4>
+
+### 😊 Objetivo
+<p align="left">O bootcamp tem como objetivo formar Desenvolvedores Fullstack Java/Angular. Esse repositório servirá para a entrega das atividades diárias e acompanhamento do meu progresso nessa jornada.</p>
+
+### 📝 CRONOGRAMA
+
+#### MÓDULO 1
+- [x] Portugol - INTRO-CS-2
+
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas serão utilizadas no decorrer deste Bootcamp:
+- Portugol Studio
+- Java/Spring
+- AngularJS
+- Typescript
+
+### Autor
+---
+Feito por Fábio Monteiro 👋🏽 Entre em contato!
+
+ [![Linkedin Badge](https://img.shields.io/badge/-fabiomrm-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/fabiomrm/)](https://www.linkedin.com/in/fabiomrm/) 
