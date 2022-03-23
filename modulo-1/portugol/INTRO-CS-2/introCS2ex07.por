@@ -1,5 +1,6 @@
 programa
 {
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
@@ -24,7 +25,7 @@ programa
 		x = ((c * k) - (b * f)) / denominador
 		y = ((a * f) - (c * d)) / denominador
 
-		escreva("x=",x, " y=", y)
+		escreva("x=",mat.arredondar(x, 2), " y=", mat.arredondar(y, 2))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -32,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 582; 
+ * @POSICAO-CURSOR = 653; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
