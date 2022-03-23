@@ -15,7 +15,7 @@ programa
 		inteiro anos = idadeDias / 365
 		inteiro meses = (idadeDias % 365) / 30
 		inteiro dias = idadeDias - anos*365 - meses * 30
-		escreva(meses)
+	
 		escreva("\nSua idade é de ", anos, " anos, ", meses, " meses e ", dias, " dias!")
 		
 	}
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 355; 
+ * @POSICAO-CURSOR = 341; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
