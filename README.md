@@ -19,6 +19,7 @@
 #### MÓDULO 1
 - [x] Portugol - INTRO-CS-2
 - [x] Portugol - LACO-LOGICA-1
+- [x] Portugol - LACO-REPETICAO
 
 
 ### 🛠 Tecnologias
