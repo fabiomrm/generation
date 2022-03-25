@@ -50,6 +50,7 @@ programa
 
 		escreva("\n===RELATÓRIO DE HABITANTES===")
 		escreva("\nMédia do salário da população é: R$ ", mat.arredondar(mediaSalarios, 2))
+		escreva("\nMaior salário: R$ ", mat.arredondar(maiorSalario, 2))
 		escreva("\nMédia do número de filhos é: ", mat.arredondar(mediaNumeroFilhos, 2))
 		escreva("\nPercentual de salários até R$ 100,00: ", mat.arredondar((qtdSalariosAteCem / QTD_HABITANTES) * 100, 2), "%")
 		
@@ -61,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 106; 
+ * @POSICAO-CURSOR = 1092; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
