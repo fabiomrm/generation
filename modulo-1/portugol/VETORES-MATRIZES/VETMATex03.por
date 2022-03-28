@@ -41,6 +41,12 @@ programa
 			escreva(" ]\n")
 		}
 
+		para(inteiro i=0; i < 4; i++) {
+			para(inteiro j=0; j < 6; j++) {
+				matrizM1[i][j] = matrizN1[i][j] - matrizN2[i][j]
+			}
+		}
+
 		escreva("\n\nMATRIZ M2 SENDO A DIFERENÇA ENTRE N1 + N2\n")
 		para(inteiro i=0; i < 4; i++) {
 			escreva("[ ")
@@ -56,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1029; 
+ * @POSICAO-CURSOR = 992; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
