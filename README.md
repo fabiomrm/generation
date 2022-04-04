@@ -24,6 +24,8 @@
 - [x] Portugol - LACO-REPETICAO
 - [x] Portugol - VETORES-MATRIZES
 - [x] Java - INTRODUÇÃO
+- [x] Java - LACOS-DECISÃO
+- [x] Java - EXERCICIOS-REPETICAO
 
 ### 🛠 Tecnologias
 
