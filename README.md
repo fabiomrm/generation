@@ -26,6 +26,7 @@
 - [x] Java - INTRODUÇÃO
 - [x] Java - LACOS-DECISÃO
 - [x] Java - EXERCICIOS-REPETICAO
+- [x] Java - EXERCICIOS-ARRAY
 
 ### 🛠 Tecnologias
 
