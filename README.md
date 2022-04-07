@@ -28,6 +28,7 @@
 - [x] Java - EXERCICIOS-REPETICAO
 - [x] Java - EXERCICIOS-ARRAY
 - [x] Java - EXERCICIOS - CLASSES/OBJETOS
+- [x] Java - EXERCICIOS - HERANCA/POLIMORFISMO
 
 ### 🛠 Tecnologias
 
