@@ -9,10 +9,15 @@ public class Main {
 	public static void main(String[] args) {
 
 		Cachorro cachorro = new Cachorro("Bob", 10, 100);
-		Cavalo cavalo = new Cavalo("André", 23);
+		Cachorro cachorro2 = new Cachorro("Bob", 10, 100);
+		Cavalo cavalo = new Cavalo("Pé de Pano", 23);
 		Preguica preguica = new Preguica("Kayla", 12);
 
 		cachorro.emiteSom("AU-AU", "e tá curtindo");
+		
+		System.out.println(cachorro);
+		System.out.println(cachorro2);
+		System.out.println(cachorro == cachorro2);
 
 		System.out.println("===========");
 
