@@ -30,6 +30,7 @@
 - [x] Java - EXERCICIOS - CLASSES/OBJETOS
 - [x] Java - EXERCICIOS - HERANCA
 - [x] Java - EXERCICIOS - POLIMORFISMO
+- [x] Java - EXERCICIOS - COLEÇÕES
 
 ### 🛠 Tecnologias
 
