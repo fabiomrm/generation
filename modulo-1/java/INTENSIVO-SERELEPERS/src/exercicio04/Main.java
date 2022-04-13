@@ -15,6 +15,7 @@ public class Main {
 		int col = 0;
 
 		while (!winner) {
+
 			if (ticTacToe.player1turn()) {
 				System.out.println("Jogador 1: [LINHA][COLUNA]");
 				sign = 'X';
@@ -36,7 +37,7 @@ public class Main {
 			} else if (ticTacToe.checkWinner('0')) {
 				winner = true;
 				System.out.println("Jogador 2 ganhou");
-			} else if(ticTacToe.getPlayCount() > 9) {
+			} else if (ticTacToe.getPlayCount() > 9) {
 				winner = true;
 				System.out.println("EMPATE");
 			}

@@ -66,7 +66,7 @@ public class TicTacToe {
 	}
 
 	public boolean player1turn() {
-		if (playCount % 2 == 0) {
+		if (playCount % 2 != 0) {
 			return true;
 		}
 

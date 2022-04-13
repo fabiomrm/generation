@@ -2,6 +2,7 @@ package serelepersdia01;
 
 public class Personagem {
 
+	//ATRIBUTOS => Pq? Porque são as características de uma personagem
 	private String nomePersonagem;
 	private int idadePersonagem;
 	private double alturaPersonagem;
@@ -16,14 +17,17 @@ public class Personagem {
 		this.pontoVida = pontoVida;
 	}
 
+	
+	//MÉTODO => Pq? Porque são ações atribuídas ao objeto
+	//Pega o nome do personagem
 	public String getNomePersonagem() {
 		return this.nomePersonagem;
 	}
-
+	//Pega a idade do personagem
 	public int getIdadePersonagem() {
 		return this.idadePersonagem;
 	}
-
+	//Altera a fala do personagem
 	public void setFalaPersonagem(String falaPersonagem) {
 		if (falaPersonagem == "Avada Kedavra") {
 			System.out.println("Ei menino, só Voldemort usa!");
