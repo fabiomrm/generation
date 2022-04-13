@@ -36,8 +36,7 @@ public class Main {
 			for (int j = 0; j < 3; j++) {
 				System.out.println("Digite a nota " + (1 + j) + ": ");
 				Double note = sc.nextDouble();
-				
-
+				student.getNotes()[i][j] = note;
 			}
 		}
 
@@ -49,7 +48,9 @@ public class Main {
 		System.out.println("Você deseja saber sua situação em qual disciplina? ");
 		int discplineIndex = sc.nextInt();
 		System.out.println(student.isApproved(discplineIndex));
+		
 
+		sc.close();
 	}
 
 }

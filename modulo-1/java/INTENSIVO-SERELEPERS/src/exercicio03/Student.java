@@ -9,7 +9,7 @@ public class Student {
 	private String code;
 	private String course;
 	private List<Discipline> disciplines = new ArrayList<>();
-	private double[][] notes = new double[3][4];
+	private double[][] notes = new double[3][3];
 
 	public Student() {
 
@@ -63,15 +63,19 @@ public class Student {
 	public double calculateAvg(int disciplineIndex) {
 		double sum = 0d;
 		for (int i = 0; i < notes[disciplineIndex - 1].length; i++) {
-			sum += notes[disciplineIndex][i];
+			System.out.println(notes[disciplineIndex - 1][i]);
+			sum += notes[disciplineIndex - 1][i];
 		}
+	
+		return sum / 3;
+		
 
-		return sum / notes[disciplineIndex - 1].length;
 	}
 	
 	public boolean isApproved(int disciplineIndex) {
 		
 		double avg = calculateAvg(disciplineIndex);
+		System.out.println("Média: " + avg);
 		return avg >= 7;
 	}
 
