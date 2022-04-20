@@ -32,6 +32,10 @@
 - [x] Java - EXERCICIOS - POLIMORFISMO
 - [x] Java - EXERCICIOS - COLEÇÕES
 
+#### MÓDULO 2
+
+- [x] Sql - INTRODUÇÃO: ATIVIDADES 01/02/03
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas serão utilizadas no decorrer deste Bootcamp:
