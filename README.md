@@ -35,6 +35,7 @@
 #### MÓDULO 2
 
 - [x] Sql - INTRODUÇÃO: ATIVIDADES 01/02/03
+- [x] Spring - Projeto backend Farmácia
 
 ### 🛠 Tecnologias
 
