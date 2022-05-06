@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.farmacia.farmacia.models.Produto;
+import com.farmacia.farmacia.repositories.CategoriaRepositorio;
 import com.farmacia.farmacia.repositories.ProdutoRepositorio;
 
 @RestController
@@ -28,6 +29,9 @@ public class ProdutoController {
 
 	@Autowired
 	private ProdutoRepositorio repository;
+
+	@Autowired
+	private CategoriaRepositorio categoriaRepository;
 
 	@GetMapping
 	public ResponseEntity<List<Produto>> getAll() {
@@ -39,7 +43,7 @@ public class ProdutoController {
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
-	
+
 	@GetMapping("/nome/{nome}")
 	public ResponseEntity<List<Produto>> getByNome(@PathVariable String nome) {
 		return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
@@ -47,15 +51,28 @@ public class ProdutoController {
 
 	@PostMapping
 	public ResponseEntity<Produto> post(@Valid @RequestBody Produto produto) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
+		if (categoriaRepository.existsById(produto.getCategoria().getId())) {
+			return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto));
+		}
+
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+
 	}
 
 	@PutMapping
 	public ResponseEntity<Produto> put(@Valid @RequestBody Produto produto) {
-		return repository.findById(produto.getId())
-				.map(resposta -> ResponseEntity.status(HttpStatus.CREATED).body(repository.save(produto)))
-				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
+		if (repository.existsById(produto.getCategoria().getId())) {
+			if (categoriaRepository.existsById(produto.getCategoria().getId())) {
+				return ResponseEntity.status(HttpStatus.OK).body(repository.save(produto));
+			}
+
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+		}
+
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+
 	}
+
 
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	@DeleteMapping("/{id}")
