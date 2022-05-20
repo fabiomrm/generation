@@ -4,28 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Meu Perfil</title>
   </head>
   <body>
-    <ul>
+    <ul id="menu">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/contato.html">Contato</a></li>
     </ul>
-    <h1>Sobre mim</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum excepturi
-      eveniet voluptate culpa sed ipsam iusto porro, nobis incidunt doloremque.
-    </p>
-    <img src="./assets/images/avatar.jpg" alt="avatar do criador" />
-
-    <h2>Meu vídeo favorito:</h2>
-    <iframe
-      src="https://www.youtube.com/embed/U1_25tDKONQ"
-      frameborder="0"
-      width="340"
-      height="315"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    ></iframe>
+    <h1 class="center">Sobre mim</h1>
+    <div class="container">
+      <div class="img">
+        <img
+          class="br-50 wh-300 p-30"
+          src="./assets/images/avatar.jpg"
+          alt="avatar do criador"
+        />
+      </div>
+      <div class="text p-30">
+        <p class="center justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          excepturi eveniet voluptate culpa sed ipsam iusto porro, nobis
+          incidunt doloremque.
+        </p>
+        <p class="center justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+          excepturi eveniet voluptate culpa sed ipsam iusto porro, nobis
+          incidunt doloremque.
+        </p>
+      </div>
+    </div>
+    <div class="text">
+      <h2 class="center">Meu vídeo favorito:</h2>
+      <div class="container">
+        <iframe
+          src="https://www.youtube.com/embed/U1_25tDKONQ"
+          frameborder="0"
+          width="340"
+          height="315"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </div>
+    </div>
+    <hr />
   </body>
 </html>
